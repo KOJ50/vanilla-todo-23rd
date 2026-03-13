@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>vanilla-todo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="menuButton">&#9776;</button>
+      <h1 class="title">To Do</h1>
+    </header>
+    <aside>
+      <div class="menuList">
+        <span class="closeMenu">X</span>
+        <button class="week" id="previousWeek">이전 주</button>
+        <button class="week" id="nextWeek">다음 주</button>
+        <input type="date" id="calendar" />
+        <button class="darkMode">🌙</button>
+      </div>
+    </aside>
+    <div>
+      <button class="date" id="previousDate">◀</button>
+      <span id="currentDateText"></span>
+      <button class="date" id="nextDate">▶</button>
+    </div>
+    <main>
+      <input class="input" placeholder="오늘의 할 일을 적어주세요!" />
+      <button class="enter">등록</button>
+      <span id="total"></span>
+      <ul id="todoList"></ul>
+    </main>
+    <script src="vanilla.js"></script>
+  </body>
+</html>
